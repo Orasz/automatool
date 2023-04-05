@@ -12,7 +12,7 @@ parser.add_argument('--packages-dir', dest='packages_dir',
                     default='./packages/', type=str,
                     help='Packages default output directory\nDefault: [./packages]')
 parser.add_argument('--bin', dest='bin',
-                    default=os.path.join('./jsonschema2pojo-1.2.1', 'bin', 'jsonschema2pojo'), type=str,
+                    default=os.path.join('lib', 'jsonschema2pojo-1.2.1', 'bin', 'jsonschema2pojo'), type=str,
                     help=f"Jsonschema2pojo bin file path\nDefault: [{os.path.join('./jsonschema2pojo-1.2.1', 'bin', 'jsonschema2pojo')}]")
 parser.add_argument('--file_type', dest='file_type',
                     default='JSON', type=str,
