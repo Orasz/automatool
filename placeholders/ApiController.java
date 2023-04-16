@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author Codicef & Orasz
  */
 @RestController
-public class ApiController {
+public class ApiController {{
     
     Logger logger = LoggerFactory.getLogger("API LOGGER");
     
@@ -32,17 +32,17 @@ public class ApiController {
     BusinessService service;
     
     @PostMapping("/testApi")
-    public ResponseEntity<{{Resource}}> convert(@RequestBody {{InputDto}} dto) throws IllegalAccessException, InstantiationException{
+    public ResponseEntity<{Resource}> convert(@RequestBody {InputDto} dto) throws IllegalAccessException, InstantiationException{{
         
-        {{InputModel}} inputModel = factory.convertDtoToModel(dto, {{InputModel}}.class);
+        {InputModel} inputModel = factory.convertDtoToModel(dto, {InputModel}.class);
         ObjectMapper om = new ObjectMapper();
-        logger.info("Converted model = {}", om.writeValueAsString(inputModel));
+        logger.info("Converted model = {{}}", om.writeValueAsString(inputModel));
         
-        {{OutputModel}} outputModel = service.doSomeBusinessLogic(inputModel);
+        {OutputModel} outputModel = service.doSomeBusinessLogic(inputModel);
         
-        {{Resource}} resource = assembler.convertModelToResource(outputModel, {{Resource}}.class);
+        {Resource} resource = assembler.convertModelToResource(outputModel, {Resource}.class);
         
         return ResponseEntity.ok(resource);
-    }
+    }}
     
-}
+}}

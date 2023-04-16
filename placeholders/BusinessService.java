@@ -7,11 +7,11 @@ package com.automatool.poc;
 import org.springframework.stereotype.Service;
 
 @Service
-class BusinessService {
+class BusinessService {{
     
-public {{OutputModel}} doSomeBusinessLogic({{InputModel}} inputModel){
+public {OutputModel} doSomeBusinessLogic({InputModel} inputModel){{
     //implement custom logic here
     return null;
-}
+}}
     
-}
+}}
