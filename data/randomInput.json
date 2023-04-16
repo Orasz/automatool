@@ -1,0 +1,50 @@
+{
+	"id": "643c600e0b08afb0a15eef57",
+	"children": [
+		{
+			"name": "Kaylor William",
+			"age": 9
+		},
+		{
+			"name": "Lila Mccray",
+			"age": 6
+		},
+		{
+			"name": "Hill Meadows",
+			"age": 2
+		},
+		{
+			"name": "Campbell Bryant",
+			"age": 7
+		},
+		{
+			"name": "Donovan Hutchinson",
+			"age": 1
+		}
+	],
+	"currentJob": {
+		"title": "Developer",
+		"salary": "mask;"
+	},
+	"jobs": [
+		{
+			"title": "CEO",
+			"salary": "R$ 3.771,87"
+		},
+		{
+			"title": "teacher",
+			"salary": "R$ 8.357,11"
+		}
+	],
+	"maxRunDistance": 9.4,
+	"cpf": "507.585.006-53",
+	"cnpj": "55.727.835/0001-30",
+	"pretendSalary": "R$ 5.793,12",
+	"age": 53,
+	"gender": "male",
+	"firstName": "Riley",
+	"lastName": "William",
+	"phone": "+55 (83) 99595-7200",
+	"address": "384 Kent Avenue - Shindler, New Hampshire, Bhutan.",
+	"hairColor": "magenta"
+}
