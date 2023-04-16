@@ -9,7 +9,7 @@ Tool for automating the provisioning of a basic internal java microservice struc
 ### Quick Start
 The simplest use-case is described by the following command
 
-`python3 src/gen_classes.py ./data/randomInputjson ./data/randomOutput.json`
+`python3 src/gen_classes.py ./data/randomInput.json ./data/randomOutput.json`
 
 
 
