@@ -8,7 +8,7 @@ class BusinessService {{
     
 public {OutputModel} doSomeBusinessLogic({InputModel} inputModel){{
     //implement custom logic here
-    return Randomizer.randomize({{OutputModel}}.class);
+    return Randomizer.randomize({OutputModel}.class);
 }}
 
 public static class Randomizer {{
