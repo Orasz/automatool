@@ -36,7 +36,7 @@ public class ApiController {{
         logger.info("Converted model = {{}}", om.writeValueAsString(inputModel));
         
         {OutputModel} outputModel = service.doSomeBusinessLogic(inputModel);
-        logger.info("randomized model = {}", om.writeValueAsString(outputModel));
+        logger.info("randomized model = {{}}", om.writeValueAsString(outputModel));
         logger.info("Service logic completed.");
 
         
