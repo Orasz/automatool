@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.automatool.poc;
 
 import java.lang.reflect.Field;
@@ -35,13 +32,13 @@ class ApiAssembler {
 
                         if (dtoField.getType().equals(modelField.getType())) {
 
-                            modelField.set(model, dtoFieldValue);
+                            modelField.set(resource, dtoFieldValue);
 
                         } else {
 
                             Object nestedModel = convertModelToResource(dtoFieldValue, modelField.getType());
 
-                            modelField.set(model, nestedModel);
+                            modelField.set(resource, nestedModel);
 
                         }
                     }
