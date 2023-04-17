@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.automatool.poc;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -39,9 +36,13 @@ public class ApiController {{
         logger.info("Converted model = {{}}", om.writeValueAsString(inputModel));
         
         {OutputModel} outputModel = service.doSomeBusinessLogic(inputModel);
+        logger.info("randomized model = {}", om.writeValueAsString(outputModel));
+        logger.info("Service logic completed.");
+
         
         {Resource} resource = assembler.convertModelToResource(outputModel, {Resource}.class);
-        
+        logger.info("Resource assembled.");
+
         return ResponseEntity.ok(resource);
     }}
     
